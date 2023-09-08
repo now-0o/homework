@@ -17,10 +17,10 @@ function question1(){
 }
 
 // 2. 구구단 8단 출력하기
-function eightDan(){
-    for(let i=1;i<9;i++){
-        console.log(`8 * ${i} = ${8*i}`);
+function gugudan(num){
+    for(let i=1;i<10;i++){
+        console.log(`${num} * ${i} = ${num*i}`);
     }
 }
 question1();
-eightDan();
+gugudan(8);
