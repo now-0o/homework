@@ -120,3 +120,15 @@ callStudent();
 callNameScore();
 callNameScoreOb();
 callChulsuInfo();
+
+// 10. var, const, let의 차이
+/*
+var는 재선언 해도 에러가 발생하지 않음.
+반면에 let과 const는 재선언 시 에러가 발생함
+때문에 var는 앞을 사용하지 않는다.
+
+let은 재할당이 가능한 변수.
+const는 재할당이 불가능한 변수.
+
+추가로 let이나 const는 var와 다르게 선언문 이전에 참조하면 에러가 발생한다.
+*/
