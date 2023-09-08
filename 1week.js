@@ -22,5 +22,15 @@ function gugudan(num){
         console.log(`${num} * ${i} = ${num*i}`);
     }
 }
+
+// 3. 구구단 1단부터 9단까지 출력하기
+
+function gugudanAll(){
+    for(let i=1;i<10;i++){
+        console.log(`[${i}단]`);
+        gugudan(i);
+    }
+}
 question1();
 gugudan(8);
+gugudanAll();
