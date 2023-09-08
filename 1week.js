@@ -33,6 +33,7 @@ function gugudanAll(){
 }
 
 // 4. 1~50까지의 합을 구하는 프로그램
+
 function sum(a,b){
     let num = 0;
     for(let i=a;i<=b;i++){
@@ -41,8 +42,34 @@ function sum(a,b){
     console.log(`${a}부터 ${b}까지의 합은 ${num}입니다.`);
 }
 
+// 5, 7명의 학생 이름을 출력해라
+
+const students = ["재성","윤희","희원","지성","흥민","수지","태원"];
+
+function callStudent(){
+    students.forEach((student, i)=>{
+        console.log(student);
+    })
+    console.log("-----")
+    students.forEach((student, i)=>{
+        console.log(`${student} 출석완료`);
+    })
+}
+
+// 6. 7명 학생의 이름과 점수를 출력해라
+
+function callNameScore(){
+    const scores = [90,75,95,92,100,82,93];
+    console.log("[시험 점수]")
+    scores.forEach((score, i)=>{
+        console.log(`${students[i]} : ${score}점`);
+    })
+}
+
 
 question1();
 gugudan(8);
 gugudanAll();
 sum(1,50);
+callStudent();
+callNameScore();
