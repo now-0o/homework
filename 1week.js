@@ -99,6 +99,19 @@ function callNameScoreOb(){
     })
 }
 
+// 9. 학생의 정보를 관리하자
+const student = {};
+student.name = "철수";
+student.age = "20";
+student.realfriends = ["영희","지현","서원","유정"];
+
+function callChulsuInfo(){
+    console.log("[학생 정보]")
+    console.log(`이름 : ${student.name}`)
+    console.log(`나이 : ${student.age}`)
+    console.log(`베프 : ${student.realfriends}`)
+}
+
 question1();
 gugudan(8);
 gugudanAll();
@@ -106,3 +119,4 @@ sum(1,50);
 callStudent();
 callNameScore();
 callNameScoreOb();
+callChulsuInfo();
