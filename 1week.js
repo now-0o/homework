@@ -66,6 +66,38 @@ function callNameScore(){
     })
 }
 
+// 7, 8. 7명 학생의 이름과 점수를 출력해라. (객체 활용)
+function callNameScoreOb(){
+    const NSObs = [
+        {
+            name : "재성",
+            score : "90"
+        }, {
+            name : "윤희",
+            score : "75"
+        }, {
+            name : "희원",
+            score : "95"
+        }, {
+            name : "지성",
+            score : "92"
+        }, {
+            name : "흥민",
+            score : "100"   
+        }, {
+            name : "수지",
+            score : "82"
+        }, {
+            name : "태원",
+            score : "93"
+        }
+    ];
+
+    console.log("[시험 점수]")
+    NSObs.forEach((NSOb, i)=>{
+        console.log(`${NSOb.name} : ${NSOb.score}점`);
+    })
+}
 
 question1();
 gugudan(8);
@@ -73,3 +105,4 @@ gugudanAll();
 sum(1,50);
 callStudent();
 callNameScore();
+callNameScoreOb();
