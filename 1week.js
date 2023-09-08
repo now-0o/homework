@@ -16,4 +16,11 @@ function question1(){
     console.log(`몸무게 : ${profile.weight}`);
 }
 
+// 2. 구구단 8단 출력하기
+function eightDan(){
+    for(let i=1;i<9;i++){
+        console.log(`8 * ${i} = ${8*i}`);
+    }
+}
 question1();
+eightDan();
