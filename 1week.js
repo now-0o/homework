@@ -31,6 +31,18 @@ function gugudanAll(){
         gugudan(i);
     }
 }
+
+// 4. 1~50까지의 합을 구하는 프로그램
+function sum(a,b){
+    let num = 0;
+    for(let i=a;i<=b;i++){
+        num += i;
+    }
+    console.log(`${a}부터 ${b}까지의 합은 ${num}입니다.`);
+}
+
+
 question1();
 gugudan(8);
 gugudanAll();
+sum(1,50);
