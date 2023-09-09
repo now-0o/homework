@@ -35,3 +35,21 @@ function find_max(num1, num2, num3){
 }
 
 console.log(find_max(1,5,8));
+
+// 1부터 100까지의 숫자를 출력하는데, 3의 배수인 경우에는 "Fizz", 5의 배수인 경우에는 "Buzz", 3과 5의 공배수(3의 배수이면서 5의 배수인 수)인 경우에는 "FizzBuzz"를 출력하는 함수를 작성해라. 
+
+function print_FizzBuzz(a,b){
+    for(let i=a;i<=b;i++){
+        if(i%3===0&&i%5===0){
+            console.log("FizzBuzz");
+        }else if(i%3===0&&i%5!==0){
+            console.log("Fizz");
+        }else if(i%5===0){
+            console.log("Buzz");
+        }else {
+            console.log(i);
+        }
+    }
+}
+
+print_FizzBuzz(1,100);
