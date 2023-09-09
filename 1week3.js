@@ -50,3 +50,16 @@ const oddOrEven = (number) => {
 oddOrEven(17);
 oddOrEven(16);
 
+// 신입사원 토끼의 우당탕탕 코드 고쳐주기2
+
+function rabbit_code2(score){
+    if (score % 2 === 0) {
+    console.log("짝수입니다.");
+    return;
+    }
+    console.log("홀수입니다.");
+}
+
+rabbit_code2(92);
+rabbit_code2(79);
+rabbit_code2(98);
