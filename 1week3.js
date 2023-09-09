@@ -106,3 +106,15 @@ const student3 = {
 console.log(isGoodStudent(student1));
 console.log(isGoodStudent(student2));
 console.log(isGoodStudent(student3));
+
+// 출석부 부르기
+
+const students = ["경훈", "연진", "재훈", "사라"];
+
+function chulsuck(){
+    students.forEach((student)=>{
+        console.log(`${student} 왔니?`);
+    })
+}
+
+chulsuck();
