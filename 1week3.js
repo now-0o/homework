@@ -118,3 +118,24 @@ function chulsuck(){
 }
 
 chulsuck();
+
+// 풀네임(Full Name)으로 만들기
+
+const users = [
+    {
+      firstName: "재성",
+      lastName: "박"
+    },
+    {
+      firstName: "동은",
+      lastName: "문"
+    },
+    {
+      firstName: "연진",
+      lastName: "박"
+    }
+  ];
+  
+  const fullNames = users.map((name) => name.lastName + name.firstName);
+
+  console.log(fullNames);
