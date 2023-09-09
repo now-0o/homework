@@ -63,3 +63,46 @@ function rabbit_code2(score){
 rabbit_code2(92);
 rabbit_code2(79);
 rabbit_code2(98);
+
+// 우등생 선발 프로그램
+// 전 과목이 90점 이상이거나, 두 과목 이상 100점일 경우 우등생
+
+const isGoodStudent = (student) => {
+    let chk = 0;
+	for(let i in student)
+   {
+        if(student[i]>=90){
+            if(student[i]===100){
+                chk += 2;
+            }else {
+                chk --;
+            }
+        }
+    }
+    if(chk === -3 || chk >= 3){
+        return true;
+    }
+    return false;
+}
+
+const student1 = {
+	korean: 90,
+	english: 93,
+	math: 92
+}
+
+const student2 = {
+	korean: 100,
+	english: 100,
+	math: 68
+}
+
+const student3 = {
+	korean: 88,
+	english: 91,
+	math: 89
+}
+
+console.log(isGoodStudent(student1));
+console.log(isGoodStudent(student2));
+console.log(isGoodStudent(student3));
