@@ -139,3 +139,30 @@ const users = [
   const fullNames = users.map((name) => name.lastName + name.firstName);
 
   console.log(fullNames);
+
+  // 우등생 이름 출력하기
+
+  function check_score2(){
+    const students2 = [
+        {
+        name: "박재성",
+        score: 89
+        },
+        {
+        name: "문동은",
+        score: 92
+        },
+        {
+        name: "박연진",
+        score: 97
+        }
+    ];
+
+    const highscore = students2.filter((student) => student.score >= 90);
+
+    for(let i in highscore){
+        console.log(highscore[i].name);
+    }
+ }
+
+ check_score2();
